@@ -45,12 +45,25 @@ align-content: center;
 font-size: 30px;
 }
 .div_buy {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background: rgb(108, 65, 255);
   height: 40px;
   border-radius: 20px;
-  background: blue;
+  background: rgb(108, 65, 255);
   grid-column: 1;
   font-size: 30px;
 }
 .buy {
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
   color: white;
+}
+.buy:hover {
+  background-color: blue;
+  color: rgb(30, 255, 0);
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
 }
