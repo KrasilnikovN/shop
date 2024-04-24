@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+  background: blue;
+  border-radius: 20px;
+}
+.tovary {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.tovar {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 0.5fr;
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+}
+.div_texts_tovar {
+  display: flex;
+  justify-content: center;
+}
+.picture_tovar {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  grid-column: 1;
+  background: url("../img/phone.jpg") no-repeat center top;
+  background-size: contain;
+}
+.name_tovar {
+grid-column: 1;
+font-size: 30px;
+display: flex;
+align-content: center;
+}
+.cost_tovar {
+font-size: 30px;
+}
+.div_buy {
+  height: 40px;
+  border-radius: 20px;
+  background: blue;
+  grid-column: 1;
+  font-size: 30px;
+}
+.buy {
+  color: white;
+}

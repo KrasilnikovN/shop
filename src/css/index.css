@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+  background: blue;
+  border-radius: 20px;
+}
+.tovary {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.tovar {
+  border: solid 5px red;
+  box-shadow: 10px 10px 6px 8px rgba(34, 60, 80, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: 2fr 1fr 0.5fr;
+  background: orange;
+  height: 400px;
+  width: 250px;
+  border-radius: 20px;
+}
+.div_texts_tovar {
+  display: flex;
+  justify-content: center;
+}
+.picture_tovar {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  grid-column: span 2;
+  background: url("../img/phone.jpg") no-repeat center top;
+  background-size: contain;
+}
+.name_tovar {
+font-size: 30px;
+display: flex;
+align-content: center;
+}
+.cost_tovar {
+font-size: 30px;
+}
+.div_buy {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(108, 65, 255);
+  grid-column: span 2;
+  font-size: 30px;
+}
+.buy {
+  text-align: center;
+  color: white;
+  transition: all 1s ease-in-out;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.buy:hover {
+  transition: all 1s ease-in-out;
+  color: rgb(30, 255, 0);
+  background-color: blue;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
