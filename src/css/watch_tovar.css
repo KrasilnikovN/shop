@@ -39,6 +39,7 @@ align-content: center;
 font-size: 30px;
 }
 .div_buy {
+  transition: all 1s ease-in-out;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -49,6 +50,10 @@ font-size: 30px;
   background: rgb(108, 65, 255);
   grid-column: span 2;
   font-size: 30px;
+}
+.div_buy:hover {
+  transition: all 1s ease-in-out;
+  transform: scale(1.1);
 }
 .buy {
   color: white;
@@ -64,4 +69,21 @@ font-size: 30px;
 .reviews {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.reviews {
+border: solid 5px gray;
+border-radius: 20px;
+}
+.review_title {
+font-size: 35px;
+}
+.review_name {
+border-top: solid 3px gray;
+font-size: 30px;
+}
+.review_text {
+  font-size: 20px;
+  border-top: solid 3px gray;
 }

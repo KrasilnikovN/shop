@@ -18,7 +18,7 @@ header {
 }
 .tovar {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 2fr 1fr 0.5fr;
   height: 500px;
   width: 100%;
