@@ -2,15 +2,6 @@ html, body {
   margin: 0;
   width: 100%;
 }
-header {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  width: 90%;
-  margin-left: 5%;
-  background: blue;
-  border-radius: 20px;
-}
 .tovar {
   display: grid;
   grid-template-columns: 1fr 2fr;

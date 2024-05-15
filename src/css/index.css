@@ -2,15 +2,6 @@ html, body {
   margin: 0;
   width: 100%;
 }
-header {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  width: 90%;
-  margin-left: 5%;
-  background: blue;
-  border-radius: 20px;
-}
 .tovary {
   margin-top: 40px;
   display: flex;
@@ -28,6 +19,15 @@ header {
   height: 400px;
   width: 250px;
   border-radius: 20px;
+  animation-name: rgb;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rgb {
+  0%{background-color: rgb(0, 182, 217);}
+  50%{background-color: rgb(0, 214, 255);}
+  100%{background-color: rgb(0, 182, 217);}
+
 }
 .tovar:hover {
   transition: all 0.4 ease-in-out;

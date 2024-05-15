@@ -1,69 +1,90 @@
+@import "../node_modules/bootstrap/scss/functions";
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
 html, body {
   margin: 0;
   width: 100%;
 }
-header {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  width: 90%;
-  margin-left: 5%;
-  background: blue;
-  border-radius: 20px;
-}
 .tovary {
+  padding-top: 50px;
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   align-content: space-around;
 }
 .tovar {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 0.5fr;
-  height: 500px;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   border-radius: 20px;
 }
 .div_texts_tovar {
   display: flex;
   justify-content: center;
 }
-.picture_tovar {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  grid-column: 1;
-  background: url("../img/phone.jpg") no-repeat center top;
-  background-size: contain;
+.tovar_pic_pic {
+height: 200px;
+width: 200px;
 }
-.name_tovar {
-grid-column: 1;
-font-size: 30px;
+.tovar_name {
 display: flex;
 align-content: center;
 }
-.cost_tovar {
-font-size: 30px;
-}
-.div_buy {
+.tovar_buy {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
   text-align: center;
   background: rgb(108, 65, 255);
   height: 40px;
   border-radius: 20px;
   background: rgb(108, 65, 255);
-  grid-column: 1;
+  font-size: 30px;
+  animation-name: shake;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.cont {
+  width: 100%;
+}
+.cont_buy {
+  margin-top: 50px;
+}
+.text {
   font-size: 30px;
 }
-.buy {
+@keyframes shake {
+  0%{}
+  5%{transform:rotate(5deg);}
+  10%{transform:rotate(-5deg);}
+  15%{transform: rotate(5deg);}
+  20%{transform: rotate(0deg);}
+  100%{}
+}
+.tovar_buy_text {
+  background-color: rgb(108, 65, 255);
   transition: all 1s ease-in-out;
   border-radius: 20px;
   color: white;
 }
-.buy:hover {
+.tovar_buy_text:hover {
   background-color: blue;
   color: rgb(30, 255, 0);
   transition: all 1s ease-in-out;
   border-radius: 20px;
+}
+footer {
+  margin-top: 30px;
 }
