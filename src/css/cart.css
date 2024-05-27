@@ -78,6 +78,9 @@ align-content: center;
   border-radius: 20px;
   color: white;
 }
+.tovar_kol {
+  width: 55px;
+}
 .tovar_buy_text:hover {
   background-color: blue;
   color: rgb(30, 255, 0);

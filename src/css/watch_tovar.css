@@ -26,8 +26,22 @@ font-size: 30px;
 display: flex;
 align-content: center;
 }
+.div_description {
+  grid-column: span 2;
+  border: 5px solid gray;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.tovar_description_title {
+  display: flex;
+  justify-content: center;
+}
 .cost_tovar {
 font-size: 30px;
+}
+.text_desc {
+  font-size: 20px;
+  word-wrap: break-word;
 }
 .div_buy {
   transition: all 1s ease-in-out;
@@ -57,15 +71,24 @@ font-size: 30px;
   transition: all 1s ease-in-out;
   border-radius: 20px;
 }
-.reviews {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
+.carousel_reviews {
   margin-bottom: 100px;
 }
+.reviews, reviews_cont{
+  display: flex;
+  flex-direction: column;
+  border: solid 5px gray;
+  border-radius: 20px;
+}
+.reviews_cont {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border: solid 5px gray;
+  border-radius: 20px;
+}
 .reviews {
-border: solid 5px gray;
-border-radius: 20px;
+  margin-left: 10%;
+  width: 80%;
 }
 .review_title {
 font-size: 35px;
@@ -73,6 +96,9 @@ font-size: 35px;
 .review_name {
 border-top: solid 3px gray;
 font-size: 30px;
+}
+.review_name_text, review_text_text{
+  word-wrap: break-word;
 }
 .review_text {
   font-size: 20px;
