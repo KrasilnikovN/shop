@@ -8,7 +8,6 @@ html, body {
   grid-template-rows: 2fr 1fr 0.5fr;
   height: 100%;
   width: 100%;
-  border-radius: 20px;
 }
 .div_texts_tovar {
   display: flex;
